@@ -1,0 +1,19 @@
+    public static void main ( String[] args ) {
+        Scanner teclado = new Scanner(System.in);
+        System.out.print("Digite o valor do primeiro termo da PA: ");
+        Float a_1 = teclado.nextFloat();
+
+        System.out.print("Digite a razão da PA: ");
+        Float r = teclado.nextFloat();
+
+        System.out.print("Digite o numero de termos da PA: ");
+        int n = teclado.nextInt();
+
+        double a_n = a_1 + (n-1) * r;
+
+        System.out.println("Ultímo termo da PA: " + a_n);
+
+        double S_n = (a_1 + a_n) * n/2;
+        System.out.print("A soma de todos os termos da PA: " + S_n);
+    }
+}
